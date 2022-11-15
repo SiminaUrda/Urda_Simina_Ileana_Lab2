@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Urda_Simina_Ileana_Lab2.Data;
 
@@ -11,9 +12,10 @@ using Urda_Simina_Ileana_Lab2.Data;
 namespace Urda_Simina_Ileana_Lab2.Migrations
 {
     [DbContext(typeof(Urda_Simina_Ileana_Lab2Context))]
-    partial class Urda_Simina_Ileana_Lab2ContextModelSnapshot : ModelSnapshot
+    [Migration("20221115154910_Create12")]
+    partial class Create12
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
